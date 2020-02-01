@@ -10,6 +10,15 @@ def main():
     binary_result = binary_search(numbers, 6666666)
     print("Position found: {}".format(binary_result))
     print("Number at position {} was {}".format(binary_result, sorted(numbers)[binary_result]))
+
+
+
+    def some_function(number):
+        if numbers == 6666666:
+            return "Yay well done"
+
+    some_function(sorted(numbers)[binary_result])
+    some_function(6666666)
     
 
 def linear_search(data, needle):
@@ -19,8 +28,8 @@ def linear_search(data, needle):
             return index
 
 
-def binary_search(data, needle):
-    sorted_data = sorted(data)
+def binary_search(data, needle, comparison=None):
+    sorted_data = sorted(data, key=comparison)
     left_index = 0
     right_index = len(sorted_data)
 
@@ -29,6 +38,9 @@ def binary_search(data, needle):
         # print("Looking at {} between {} and {}".format(middle_index, left_index, right_index))
 
         num = sorted_data[middle_index]
+        # If using a non-standard comparison function
+        if not comparison == None:
+            num = comparison(num)
         if num > needle:
             right_index = middle_index
         elif num < needle:
@@ -37,4 +49,3 @@ def binary_search(data, needle):
             return middle_index
 
 
-main()
