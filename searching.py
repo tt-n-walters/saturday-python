@@ -28,7 +28,10 @@ def linear_search(data, needle):
             return index
 
 
-def binary_search(data, needle, comparison=None):
+from typing import Any, Callable
+
+
+def binary_search(data: list, needle: Any, comparison: Callable[Any, Any] = None) -> Any:
     sorted_data = sorted(data, key=comparison)
     left_index = 0
     right_index = len(sorted_data)

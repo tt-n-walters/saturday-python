@@ -11,8 +11,32 @@
 
 
 
-def shout(text):
+def shout(text: str) -> str:
     return text.upper()
+
+
+
+
+
+result = shout("hello")
+result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+
 
 
 def whisper(text):
@@ -40,3 +64,4 @@ print(nico_whispers("THIS TEXT IS VERY LOUD ISNT IT"))
 
 nico_broke = person_does_something("nico", 42)
 nico_broke("Does this work?")
+'''

@@ -1,0 +1,49 @@
+
+	Bulk renames files
+		
+		-> folder of files
+			add string to the start/end
+	
+	
+	Speed typing game
+		
+		Given a target sentence
+		Calculates accuracy and speed
+		
+		
+	Wordsearch
+		
+		Generation
+		Solving
+	
+	
+		
+		
+	
+
+Bulk file renaming program
+
+
+
+	Add static to start/end of names
+	Add dynamic to start/end of names
+	Remove static from start/end names
+	Remove dynamic from start/end names
+
+	Dynamics
+	Time date numbering
+
+	Case changing
+
+	Filename lengths
+
+	Filter which files to rename
+	File types
+	Filenames that startwith/endwith/contain a match
+	w/ w/o RegularExpression
+	
+	
+	
+
+		^[A-Z]{1}.*[0-9]$
+
