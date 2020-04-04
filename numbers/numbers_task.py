@@ -9,10 +9,7 @@ operations = {
     "to the power of": pow
 }
 
-def join_list(list):
-    return " ".join(list)
-
-processors = [ int, join_list, int ]
+processors = [ int, lambda lst: " ".join(lst), int ]
 
 # Accepts the name of a mathematical operation, and finds the appropriate
 # mathematical function.
